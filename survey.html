@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Survey Form</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <h1 id="title">Survey  </h1>
+
+  <p id="description">Please fill out the information below:</p>
+
+  <form id="survey-form">
+    <label for="name" id="name-label">Name:</label>
+    <input type="text" id="name" placeholder="Your name" required>
+
+    <label for="email" id="email-label">Email:</label>
+    <input type="email" id="email" placeholder="Your email" required>
+
+    <label for="number" id="number-label"> Phone Number:</label>
+    <input type="number" id="number" placeholder="Enter Phone Number" min="1" max="10">
+<br>
+    <label for="dropdown">Select an option:</label>
+    <select id="dropdown">
+      <option value="option1">I loved it!</option>
+      <option value="option2">It could have been better!</option>
+      <option value="option3">No,I didn't like it</option>
+    </select>
+<br>
+    <label>Gender:</label>
+    <div>
+      <input type="radio" id="gender1" name="gender" value="gender1">
+      <label for="gender">Male</label>
+    </div>
+    <div>
+      <input type="radio" id="gender2" name="gender" value="gender2">
+      <label for="gender2">Female</label><br>
+      <input type="radio" id="gender3" name="gender" value="gender3">
+      <label for="gender3">Prefer not to say</label>
+    </div>
+
+    <label>Can we call you for promotions?</label>
+    <div>
+      <input type="checkbox" id="checkbox1" value="checkbox1">
+      <label for="checkbox1">Yes</label>
+    </div>
+    <div>
+      <input type="checkbox" id="checkbox2" value="checkbox2">
+      <label for="checkbox2">No</label>
+    </div>
+<br>
+    <label for="comments">Additional Comments:</label><br>
+    <textarea id="comments" placeholder="Enter your comments"></textarea>
+<br>
+    <input type="submit" id="submit" value="Send">
+  </form>
+
+  <script src="script.js"></script>
+</body>
+</html>
