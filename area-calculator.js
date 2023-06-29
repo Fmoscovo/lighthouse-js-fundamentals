@@ -21,4 +21,3 @@ function calculateCircleArea(radius) {
     return undefined;
   }
 }
-
